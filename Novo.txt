@@ -1,2 +1,4 @@
 Obi-wan
 Anakin
+Padme
+Ioda
