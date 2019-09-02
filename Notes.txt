@@ -1,0 +1,19 @@
+Criando chave SSH:
+ssh-keygen -p
+ssh-agent
+eval $(ssh-agent -s)
+ssh-add C:/Users/mateu/github
+
+Teste da chave:
+ssh -T git@github.com
+
+Adicionar no github:
+git remote add origin https://github.com/mateus1991/GIT.git
+
+Criar um git numa pasta:
+git init
+
+Mandar pro repositório:
+git add “file”
+git commit -m “message”
+git push -u origin master
