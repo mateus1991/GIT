@@ -22,4 +22,8 @@ git add “file”
 git commit -m “message”
 git push -u origin master
 
+Diferença para antes do ultimo commit:
 git diff HEAD~1
+
+Vizualiza historico de alteraçoes:
+git log
