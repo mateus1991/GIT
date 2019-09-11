@@ -4,3 +4,4 @@ Padme
 Solo
 Luke Skywalker
 Darth Vadder
+Boba Fett
