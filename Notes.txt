@@ -38,5 +38,11 @@ git checkout master
 
 Desfazendo alterações sem commit:
 git checkout -- <path_or_file>
-Desfaz alteracao em arquivo no stage (já com commit):
+Desfaz alteracao em arquivo no stage (já adicionado):
 git checkout HEAD -- <path_or_file>
+Desfazer commit anterior:
+git revert <commit>
+Voltar o repositório pra outro commit (não fazer se já estiver publicado):
+git reset <commit>
+git reset --hard <commit>
+
