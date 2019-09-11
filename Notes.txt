@@ -17,3 +17,5 @@ Mandar pro repositório:
 git add “file”
 git commit -m “message”
 git push -u origin master
+
+git diff HEAD~1

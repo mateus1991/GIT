@@ -2,3 +2,5 @@ Obi-wan
 Anakin
 Padme
 Solo
+Luke
+Darth Vadder
