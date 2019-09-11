@@ -36,7 +36,7 @@ git checkout <commit> <file>
 Retornar:
 git checkout master
 
-Desfazendo alterações:
+Desfazendo alterações sem commit:
 git checkout -- <path_or_file>
+Desfaz alteracao em arquivo no stage (já com commit):
 git checkout HEAD -- <path_or_file>
-git switch -
