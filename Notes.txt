@@ -7,6 +7,10 @@ ssh-add C:/Users/mateu/github
 Teste da chave:
 ssh -T git@github.com
 
+Adicionar informações para evitar login e senha toda hora:
+git config user.name "mateus1991"
+git config user.email "mateus.oliveira@gec.inatel.br"
+
 Adicionar no github:
 git remote add origin https://github.com/mateus1991/GIT.git
 
