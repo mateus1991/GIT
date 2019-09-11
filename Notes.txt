@@ -17,6 +17,9 @@ git remote add origin https://github.com/mateus1991/GIT.git
 Criar um git numa pasta:
 git init
 
+Ver status das alterações:
+git status
+
 Mandar pro repositório:
 git add “file”
 git commit -m “message”
@@ -27,3 +30,13 @@ git diff HEAD~1
 
 Vizualiza historico de alteraçoes:
 git log
+
+Voltar ao estado em certo commit:
+git checkout <commit> <file>
+Retornar:
+git checkout master
+
+Desfazendo alterações:
+git checkout -- <path_or_file>
+git checkout HEAD -- <path_or_file>
+git switch -
