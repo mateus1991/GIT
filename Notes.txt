@@ -45,6 +45,9 @@ git marge <branch>
 Rebase (Merge mas os commits da branch são aplicados antes e depois os da master são aplicados um a um):
 git rebase <branch>
 
+Fetch (pull = fetch + Merge) permite rebase ao invés de merge:
+git fetch
+
 Voltar ao estado em certo commit:
 git checkout <commit> <file>
 Retornar:
