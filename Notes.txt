@@ -40,6 +40,10 @@ Remover uma branch:
 git branch -d <branch>
 MUdar de branch:
 git checkout <branch>
+Merge branchs:
+git marge <branch>
+Rebase (Merge mas os commits da branch são aplicados antes e depois os da master são aplicados um a um):
+git rebase <branch>
 
 Voltar ao estado em certo commit:
 git checkout <commit> <file>
