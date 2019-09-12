@@ -16,6 +16,8 @@ git remote add origin https://github.com/mateus1991/GIT.git
 
 Criar um git numa pasta:
 git init
+Puxar dados de um git existente:
+git pull
 
 Ver status das alterações:
 git status
@@ -30,6 +32,14 @@ git diff HEAD~1
 
 Vizualiza historico de alteraçoes:
 git log
+
+Branch:
+git branch
+git branch <nova_branch>
+Remover uma branch:
+git branch -d <branch>
+MUdar de branch:
+git checkout <branch>
 
 Voltar ao estado em certo commit:
 git checkout <commit> <file>
