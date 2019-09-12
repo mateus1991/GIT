@@ -48,6 +48,11 @@ git rebase <branch>
 Fetch (pull = fetch + Merge) permite rebase ao invés de merge:
 git fetch
 
+Guardar um estado do repositório (versões estáveis do projeto):
+git tag [nome da tag]
+git push <remote> <tag>
+git checkout <tag>
+
 Voltar ao estado em certo commit:
 git checkout <commit> <file>
 Retornar:
