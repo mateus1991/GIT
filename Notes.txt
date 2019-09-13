@@ -1,70 +1,71 @@
-Criando chave SSH:
+#Criando chave SSH:
 ssh-keygen -p
 ssh-agent
 eval $(ssh-agent -s)
 ssh-add C:/Users/mateu/github
 
-Teste da chave:
+#Teste da chave:
 ssh -T git@github.com
 
-Adicionar informações para evitar login e senha toda hora:
+#Adicionar informações para evitar login e senha toda hora:
 git config user.name "mateus1991"
 git config user.email "mateus.oliveira@gec.inatel.br"
 
-Adicionar no github:
+#Adicionar no github:
 git remote add origin https://github.com/mateus1991/GIT.git
 
-Criar um git numa pasta:
+#Criar um git numa pasta:
 git init
-Puxar dados de um git existente:
+#Puxar dados de um git existente:
 git pull
+#Clonar outro repositorio:
+git clone [url]
 
-Ver status das alterações:
+#Ver status das alterações:
 git status
 
-Mandar pro repositório:
+#Mandar pro repositório:
 git add “file”
 git commit -m “message”
 git push -u origin master
 
-Diferença para antes do ultimo commit:
+#Diferença para antes do ultimo commit:
 git diff HEAD~1
 
-Vizualiza historico de alteraçoes:
+#Vizualiza historico de alteraçoes:
 git log
 
-Branch:
+#Branch:
 git branch
 git branch <nova_branch>
-Remover uma branch:
+#Remover uma branch:
 git branch -d <branch>
-MUdar de branch:
+#MUdar de branch:
 git checkout <branch>
-Merge branchs:
+#Merge branchs:
 git marge <branch>
-Rebase (Merge mas os commits da branch são aplicados antes e depois os da master são aplicados um a um):
+#Rebase (Merge mas os commits da branch são aplicados antes e depois os da master são aplicados um a um):
 git rebase <branch>
 
-Fetch (pull = fetch + Merge) permite rebase ao invés de merge:
+#Fetch (pull = fetch + Merge) permite rebase ao invés de merge:
 git fetch
 
-Guardar um estado do repositório (versões estáveis do projeto):
+#Guardar um estado do repositório (versões estáveis do projeto):
 git tag [nome da tag]
 git push <remote> <tag>
 git checkout <tag>
 
-Voltar ao estado em certo commit:
+#Voltar ao estado em certo commit:
 git checkout <commit> <file>
-Retornar:
+#Retornar:
 git checkout master
 
-Desfazendo alterações sem commit:
+#Desfazendo alterações sem commit:
 git checkout -- <path_or_file>
-Desfaz alteracao em arquivo no stage (já adicionado):
+#Desfaz alteracao em arquivo no stage (já adicionado):
 git checkout HEAD -- <path_or_file>
-Desfazer commit anterior:
+#Desfazer commit anterior:
 git revert <commit>
-Voltar o repositório pra outro commit (não fazer se já estiver publicado):
+#Voltar o repositório pra outro commit (não fazer se já estiver publicado):
 git reset <commit>
 git reset --hard <commit>
-
