@@ -28,6 +28,14 @@ git status
 git add “file”
 git commit -m “message”
 git push -u origin master
+#Editar commit anterior:
+git commit --amend
+
+#Guardar alterações sem precisar de commit:
+#Mostra lista:
+git stash list
+#Puxa do stash para o Stage:
+git stash pop
 
 #Diferença para antes do ultimo commit:
 git diff HEAD~1
@@ -46,6 +54,21 @@ git checkout <branch>
 git marge <branch>
 #Rebase (Merge mas os commits da branch são aplicados antes e depois os da master são aplicados um a um):
 git rebase <branch>
+
+#Aplicar commit em outras branchs:
+git cherry-pick <commit>
+
+#mostrar quem e em qual commit foi feita alteração linha por linha:
+git blame <arquivo>
+
+#Busca binária em commits que mudaram o comportamento:
+git bisect start
+#Apontar commit com problema:
+git bisect bad <commit>
+#apontar commit bom:
+git bisect good <commit>
+#Quando achar o commit que resolve:
+git bisect reset
 
 #Fetch (pull = fetch + Merge) permite rebase ao invés de merge:
 git fetch
@@ -69,3 +92,7 @@ git revert <commit>
 #Voltar o repositório pra outro commit (não fazer se já estiver publicado):
 git reset <commit>
 git reset --hard <commit>
+
+
+#treino:
+https://github.com/git-game/git-game
